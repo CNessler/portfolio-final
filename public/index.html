@@ -27,7 +27,7 @@
       </div>
       <div class="col-md-4 pad">
         <div class="circle">
-          <a href="#Contact">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -83,7 +83,91 @@
       </div>
     </div>
     <div class="container">
-
+      <h1 class="title">Skills</h1>
+      <div id="skills">
+        <table>
+          <tr>
+            <td>
+              <div class="image">
+                <img src="/images/api.png" alt="" />
+              </div>
+            </td>
+            <td>
+              <div class="image">
+                <img src="/images/css.jpeg" alt="" />
+              </div>
+            </td>
+            <td>
+              <div class="image">
+                <img src="/images/express.jpeg" alt="" />
+              </div>
+            </td>
+            <td>
+              <div class="image">
+                <img src="/images/javascript.png" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="image">
+                <img src="/images/mongoose.png" alt="" />
+              </div>
+            </td>
+            <td>
+              <div class="image">
+                <img src="/images/node.png" alt="" />
+              </div>
+            </td>
+            <td>
+              <div class="image">
+                <img src="/images/oopinjs.png" alt="" />
+              </div>
+            </td>
+            <td>
+              <div class="image">
+                <img src="/images/sass.png" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="image">
+                <img src="/images/mongodb.jpeg" alt="" />
+              </div>
+            </td>
+            <td>
+              <div class="image">
+                <img src="/images/angular.jpeg" alt="" />
+              </div>
+            </td>
+            <td>
+              <div class="image">
+                <img src="/images/js.png" alt="" />
+              </div>
+            </td>
+            <td>
+              <div class="image">
+                <img src="/images/ajax.jpeg" alt="" />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="form" ng-controller="PortfolioController">
+        <h1 id="contact" class="title">Contact</h1>
+        <form ng-submit="sendMessage()">
+          <div class="form-group">
+            <input class="form-control" type="email" name="email" ng-model="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="subject" rows="8" cols="40" ng-model="message" placeholder="Subject"></textarea>
+          </div>
+          <div class="form-group">
+            <input class="form-control button" type="submit" name="name" value="Send Message">
+          </div>
+        </form>
+      </div>
     </div>
     <!-- <div class="view-container">
       <div class="view" ng-view> </div>

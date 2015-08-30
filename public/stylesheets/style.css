@@ -98,7 +98,7 @@ table {
   margin: 0 auto;
 }
 
-.skills .image img {
+#skills .image img {
   -webkit-filter: brightness(100%);
   height:200px;
   width: 275px;
@@ -106,7 +106,24 @@ table {
   padding: 8px;
   background-color: white;
 }
-
+.title {
+  padding-top: 40px;
+}
+.container #skills {
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+.form {
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+.button:hover {
+  background-color: #666;
+}
 .view-container > .view.ng-animate {
   position:absolute;
   top:0;

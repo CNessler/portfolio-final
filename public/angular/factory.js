@@ -1,15 +1,18 @@
-app.factory("HikeService", ['$http', function ($http) {
+
+app.factory("PortfolioService", ['$http', function ($http) {
   return {
-    all: function(){
-      return $http.get('/api/hikes').then(function (data) {
-        return data.data;
-      })
-    },
-    create: function (post) {
-      $http.post('/api/hikes', post);
-    },
-    update: function (comment) {
-      $http.post('/api/comment', comment);
+    message: function (message) {
+      console.log(message, 'message ready');
+      $http.post('https://api.sendgrid.com/api/mail.send.json',
+      {
+        api_user: SENDGRID_USERNAME,
+        api_key: SENDGRID_PASSWORD,
+        to: TO,
+        toname: 'Claire',
+        subject: message.subject,
+        text: 'notsure',
+        from: message.email
+      }
     }
   }
 }])
