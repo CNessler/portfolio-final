@@ -1,0 +1,83 @@
+html, .ng-view{
+  background-color: black;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  background-color: #666;
+}
+
+#carousel .carousel-inner .item .carousel-caption .app-title a {text-decoration: none;}
+#carousel .carousel-inner .item .carousel-caption .app-title h3:hover {
+  color: #666;
+}
+#carousel .carousel-inner .item .carousel-caption i:hover {
+  color: #666;
+  cursor: pointer;
+}
+
+body .navbar{
+  margin: 0;
+  /*position: fixed;*/
+}
+#carousel {
+  height: 700px;
+  padding-top: 50px;
+}
+
+#right {float: right}
+#left {float: left}
+#carousel .carousel-inner .item .app-title h3{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+#carousel .carousel-inner .item img {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 700px;
+}
+#carousel .carousel-inner .item .app-title {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  text-align: center;
+  padding: 0px 0px 4px 0px;
+  margin-bottom: 150px;
+  bottom: 6em;
+}
+.git {
+  margin-bottom: 80px;
+}
+#carousel .carousel-inner .item .git a {
+  color: white;
+}
+#carousel .carousel-inner .item .skills-used {
+  font-size: 15px;
+}
+
+img {-webkit-filter: brightness(55%);}
+#pad {
+  padding-top: 50px;
+  transition:
+}
+.skills .image {
+  align-content: center;
+  text-align: center;
+
+}
+table {
+  margin: 0 auto;
+}
+
+.skills .image img {
+  -webkit-filter: brightness(100%);
+  height:250px;
+  width: 300px;
+  border: 10px solid black;
+  padding: 12px;
+}
+.container .skills .ng-enter { animation: scaleUp 0.5s both ease-in; }
+.container .skills .ng-leave { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; }

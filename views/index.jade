@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  nav.navbar.navbar-default
+    .container-fluid
+        ul.nav.navbar-nav
+          li.active
+            a(href='#')
+              | Home 
+              span.sr-only (current)
+          li
+            a(href='/skills') Skills
+          li
+            a(href='#') Content
+  #carousel.carousel.slide(data-ride='carousel', data-interval="5000", data-pause="hover")
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#carousel', data-slide-to='0')
+        li(data-target='#carousel', data-slide-to='1')
+        li(data-target='#carousel', data-slide-to='2')
+      // Wrapper for slides
+      .ang(ng-controller="PortfolioController")
+        .carousel-inner
+          .item.active
+            img(src='/images/farmers-market.png', alt='Farmers Market App')
+            .carousel-caption
+              .app-title
+                a(href="https://farmers-markets-finder.herokuapp.com/")
+                  h3 Buy Local, Eat Local 
+                .skills-used
+                  p | Express | API integration | CSS3
+              .git 
+                a
+                  i(class='fa fa-github fa-4x')
+          .item
+            img(src='http://placehold.it/1200x315', alt='...')
+            .carousel-caption
+              h3 Caption Text
+          .item
+            img(src='http://placehold.it/1200x315', alt='...')
+            .carousel-caption
+              h3 Caption Text
+        // Controls
+        a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left
+        a.right.carousel-control(href='#carousel', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right
+  .views(ng-view)
+  
+    
