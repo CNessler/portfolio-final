@@ -6,6 +6,10 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: '/partials/skills.html',
         controller: 'PortfolioController'
       })
+      .when('/contact', {
+        templateUrl: '/partials/contact.html',
+        controller: 'PortfolioController'
+      })
       .otherwise({
         redirectTo: '/'
       })

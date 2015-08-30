@@ -15,15 +15,38 @@
     <script src="/angular/controllers.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="row navbar">
+      <div class="col-md-4 pad">
+        <div class="circle">
+          <a href="#skills">Skills</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h4>Claire Nessler</h4>
+        <span>Educator turned Full Stack Developer</span>
+      </div>
+      <div class="col-md-4 pad">
+        <div class="circle">
+          <a href="#Contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <!-- <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
+        <div class="nav davbar-nav">
+
+        </div>
+        <div class="navbar-brand col-md-3">
+          <h4>Claire Nessler</h4>
+          <span>Educator turned Full Stack Developer</span>
+        </div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="/skills">Skills</a></li>
-          <li><a href="#">Content</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
     <div id="carousel" data-ride="carousel" data-interval="5000" data-pause="hover" class="carousel slide">
       <!-- Indicators-->
       <ol class="carousel-indicators">
@@ -32,7 +55,7 @@
         <li data-target="#carousel" data-slide-to="2"></li>
       </ol>
       <!-- Wrapper for slides-->
-      <div ng-controller="PortfolioController" class="ang">
+      <!-- <div ng-controller="PortfolioController" class="ang"> -->
         <div class="carousel-inner">
           <div class="item active"><img src="/images/farmers-market.png" alt="Farmers Market App">
             <div class="carousel-caption">
@@ -58,7 +81,12 @@
         </div>
         <!-- Controls--><a href="#carousel" role="button" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a><a href="#carousel" role="button" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
-      <div id="pad" ng-view> </div>
     </div>
+    <div class="container">
+
+    </div>
+    <!-- <div class="view-container">
+      <div class="view" ng-view> </div>
+    </div> -->
   </body>
 </html>
