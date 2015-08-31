@@ -1,25 +1,26 @@
 html, .ng-view{
-  background-color: black;
+  background-color: #131B23;
 }
 
 html body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 0;
-  background-color: black;
+  background-color: #131B23;
 }
 .navbar {
   padding: 25px;
   text-align: center;
   vertical-align: middle;
-  color: white;
+  color: #C5DAEA;
   position: absolute;
+  background: linear-gradient(#C5DAEA, #131B23);
 }
 .navbar a {
   text-decoration: none;
   text-align: center;
   padding-top: 5px;
-  color: black;
+  color: #131B23;
 
 }
 .navbar .circle {
@@ -27,7 +28,7 @@ html body {
   height: 4.4em;
   line-height: 4.4em;
   border-radius: 50%;
-  background-color: white;
+  background-color: #C5DAEA;
   margin: 0 auto;
   /*float: right;*/
 }
@@ -35,16 +36,16 @@ html body {
 .navbar .pad {
   padding-top: 8px
 }
-
+#carousel .carousel-indicators .active{background-color: #C5DAEA}
 #carousel .carousel-inner .item .carousel-caption .app-title a {text-decoration: none;}
 #carousel .carousel-inner .item .carousel-caption .app-title h3:hover {
-  color: #666;
+  color: #2274A5;
 }
 #carousel .carousel-inner .item .carousel-caption i:hover {
-  color: #666;
+  color: #2274A5;
   cursor: pointer;
 }
-
+#carousel .carousel-inner .item .carousel-caption .app-title .skills-used {color: #C5DAEA}
 body .navbar{
   margin: 0;
 }
@@ -57,7 +58,7 @@ body .navbar{
 #left {float: left}
 
 #carousel .carousel-inner .item .app-title h3{
-  color: white;
+  color: #C5DAEA;
   text-align: center;
   font-size: 40px;
 }
@@ -68,8 +69,8 @@ body .navbar{
   height: 600px;
 }
 #carousel .carousel-inner .item .app-title {
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
+  border-top: 4px solid #C5DAEA;
+  border-bottom: 4px solid #C5DAEA;
   text-align: center;
   padding: 0px 0px 4px 0px;
   margin-bottom: 150px;
@@ -79,7 +80,7 @@ body .navbar{
   margin-bottom: 30px;
 }
 #carousel .carousel-inner .item .git a {
-  color: white;
+  color: #C5DAEA;
 }
 #carousel .carousel-inner .item .skills-used {
   font-size: 15px;
@@ -104,10 +105,11 @@ table {
   width: 275px;
   border: 10px solid black;
   padding: 8px;
-  background-color: white;
+  background-color: #C5DAEA;
 }
 .title {
   padding-top: 40px;
+  color:#2274A5;
 }
 .container #skills {
   padding-bottom: 60px;
@@ -122,7 +124,7 @@ form {
   padding-bottom: 200px;
 }
 .button:hover {
-  background-color: #666;
+  background-color: #2274A5;
 }
 .view-container > .view.ng-animate {
   position:absolute;

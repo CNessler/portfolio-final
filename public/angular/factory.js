@@ -5,12 +5,13 @@ app.factory("PortfolioService", ['$http', function ($http) {
       console.log(message, 'message ready');
       $http.post('https://api.sendgrid.com/api/mail.send.json',
       {
+        Access-Control-Allow-Origin: *,
         api_user: SENDGRID_USERNAME,
         api_key: SENDGRID_PASSWORD,
         to: TO,
         toname: 'Claire',
         subject: message.subject,
-        text: 'notsure',
+        text: 'not sure',
         from: message.email
       }
     }

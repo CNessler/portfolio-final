@@ -1,4 +1,5 @@
 app.controller("PortfolioController", ['$scope', '$http', function ($scope, $http) {
+
   $scope.skills = false;
   $scope.showSkills = function() {
     $scope.skills = $scope.skills === false ? true: false;
@@ -17,12 +18,4 @@ app.controller("PortfolioController", ['$scope', '$http', function ($scope, $htt
       from: $scope.email
     })
   }
-  // $scope.sendMessage = function () {
-  //   console.log('in func');
-  //   var message = {
-  //     from: $scope.email,
-  //     subject: $scope.message
-  //   }
-  //   PortfolioService.message(message)
-  // }
 }])

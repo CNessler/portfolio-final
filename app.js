@@ -6,7 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 require('dotenv').load();
 
-var api = require('./routes/api');
+// var api = require('./routes/api');
+var routes = require('./routes/index');
 
 var app = express();
 
@@ -22,16 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/api', api);
-
-var allowCrossDomain = function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', ‘http://allowed_site_here.com');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-
-    next();
-}
-app.use(allowCrossDomain)
+// app.use('/api', api);
+app.use('/', routes);
 
 var sendgrid_username = process.env.SENDGRID_USERNAME;
 var sendgrid_password = process.env.SENDGRID_PASSWORD;
@@ -41,7 +34,7 @@ var sendgrid = require('sendgrid')(sendgrid_username, sendgrid_password);
 app.post('/contact', function (req, res, next) {
   sendgrid.send({
   to: to,
-  from: req.body.em,
+  from: req.body.email,
   subject: req.body.subject,
   text: req.body.message
   }, function(err, json) {
@@ -50,6 +43,16 @@ app.post('/contact', function (req, res, next) {
     res.render('index')
   })
 })
+
+// var allowCrossDomain = function(req, res, next) {
+//     res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+//     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+//     res.header('Access-Control-Allow-Headers', 'Content-Type');
+//
+//     next();
+// }
+// app.use(allowCrossDomain)
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
