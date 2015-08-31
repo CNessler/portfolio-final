@@ -4,7 +4,6 @@ html, .ng-view{
 
 html body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 0;
   background-color: #131B23;
 }
@@ -16,17 +15,30 @@ html body {
   position: absolute;
   background: linear-gradient(#C5DAEA, #131B23);
 }
+
+.navbar h4 {
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+}
+.navbar span {
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+}
 .navbar a {
   text-decoration: none;
   text-align: center;
   padding-top: 5px;
   color: #131B23;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
 
 }
 .navbar .circle {
-  width: 4.4em;
-  height: 4.4em;
-  line-height: 4.4em;
+  width: 4.9em;
+  height: 4.9em;
+  line-height: 4.9em;
   border-radius: 50%;
   background-color: #C5DAEA;
   margin: 0 auto;
@@ -45,7 +57,7 @@ html body {
   color: #2274A5;
   cursor: pointer;
 }
-#carousel .carousel-inner .item .carousel-caption .app-title .skills-used {color: #C5DAEA}
+#carousel .carousel-inner .item .carousel-caption .app-title .skills-used {color: #C5DAEA; font-family: 'Oxygen', sans-serif;}
 body .navbar{
   margin: 0;
 }
@@ -61,6 +73,7 @@ body .navbar{
   color: #C5DAEA;
   text-align: center;
   font-size: 40px;
+  font-family: 'Oxygen', sans-serif;;
 }
 #carousel .carousel-inner .item img {
   top: 0;
@@ -105,11 +118,12 @@ table {
   width: 275px;
   border: 10px solid black;
   padding: 8px;
-  background-color: #C5DAEA;
+  background-color: #FFFFFF;
 }
 .title {
   padding-top: 40px;
   color:#2274A5;
+  font-family: 'Oxygen', sans-serif;;
 }
 .container #skills {
   padding-bottom: 60px;
@@ -122,6 +136,7 @@ form {
 .form {
   padding-top: 80px;
   padding-bottom: 200px;
+  font-family: 'Oxygen', sans-serif;;
 }
 .button:hover {
   background-color: #2274A5;
