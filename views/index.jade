@@ -19,6 +19,7 @@ block content
         li.active(data-target='#carousel', data-slide-to='0')
         li(data-target='#carousel', data-slide-to='1')
         li(data-target='#carousel', data-slide-to='2')
+        li(data-target='#carousel', data-slide-to='3')
       // Wrapper for slides
       .carousel-inner
         .item.active
@@ -53,6 +54,17 @@ block content
                 p | Mongo | Express | Node | Javascript | SASS | AJAX |
             .git
               a(href='https://github.com/CNessler/monopoly-group-project/tree/new-features')
+                i.fa.fa-github.fa-4x
+        .item
+          img.fit(src='/images/comp.JPG', alt='This Portfolio')
+          .carousel-caption
+            .app-title
+              a(href='https://claire-nesslers-portfolio.herokuapp.com/')
+                h3 Portfolio 
+              .skills-used
+                p | HTML | Javascript | API integration |
+            .git
+              a(href='https://github.com/CNessler/portfolio-final/tree/move-around')
                 i.fa.fa-github.fa-4x
       // Controls
       a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
