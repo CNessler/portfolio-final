@@ -9,7 +9,7 @@ block content
           a(href='#skills') Skills
       .col-md-4
         h4 Claire Nessler
-        span Educatr turned Full Stack Developer
+        span Eductor turned Full Stack Developer
       .col-md-4.pad
         .circle
           a(href='#contact') Contact
@@ -22,24 +22,38 @@ block content
       // Wrapper for slides
       .carousel-inner
         .item.active
-          img(src='/images/farmers-market.png', alt='Farmers Market App')
+          img(src='/images/CO-hike-board.png', alt='Colorado Hike Board')
+          .carousel-caption
+            .app-title
+              a(href='http://development.colorado-hike-board.divshot.io/')
+                h3 CO Hike Board 
+              .skills-used
+                p | Mongo | Express | Angular | Node | Javascript | CSS |
+            .git
+              a(href='https://github.com/CNessler/CO-hike-board/blob/master/README.md')
+                i.fa.fa-github.fa-4x
+        .item
+          img(src='/images/eat-local.png', alt='Farmers Market App')
           .carousel-caption
             .app-title
               a(href='https://farmers-markets-finder.herokuapp.com/')
                 h3 Buy Local, Eat Local 
               .skills-used
-                p | Express | API integration | CSS3 |
+                p | Express | API integration | Javascript | CSS3 |
             .git
               a(href='https://github.com/CNessler/fruits-veggies')
                 i.fa.fa-github.fa-4x
         .item
-          img(src='http://placehold.it/1200x315', alt='...')
+          img(src='/images/board.png', alt='Monopolize')
           .carousel-caption
-            h3 Caption Text
-        .item
-          img(src='http://placehold.it/1200x315', alt='...')
-          .carousel-caption
-            h3 Caption Text
+            .app-title
+              a(href='https://monopolize-monopoloy.herokuapp.com/')
+                h3 Monopolize 
+              .skills-used
+                p | Mongo | Express | Node | Javascript | SASS | AJAX |
+            .git
+              a(href='https://github.com/CNessler/monopoly-group-project/tree/new-features')
+                i.fa.fa-github.fa-4x
       // Controls
       a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left
