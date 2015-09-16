@@ -84,6 +84,7 @@ body .navbar{
 
 #carousel .carousel-inner .item .fit {
   height: 600px;
+  width: 80%;
 }
 #carousel .carousel-inner .item .app-title {
   border-top: 4px solid #C5DAEA;
