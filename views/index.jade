@@ -19,21 +19,21 @@ block content
         li.active(data-target='#carousel', data-slide-to='0')
         li(data-target='#carousel', data-slide-to='1')
         li(data-target='#carousel', data-slide-to='2')
-        li(data-target='#carousel', data-slide-to='3')
+        //- li(data-target='#carousel', data-slide-to='3')
       // Wrapper for slides
-      .carousel-inner
+      //- .carousel-inner
+      //-   .item.active
+      //-     img(src='/images/CO-hike-board.png', alt='Colorado Hike Board')
+      //-     .carousel-caption
+      //-       .app-title
+      //-         a(href='http://development.colorado-hike-board.divshot.io/')
+      //-           h3 CO Hike Board 
+      //-         .skills-used
+      //-           p | Mongo | Express | Angular | Node | Javascript | CSS |
+      //-       .git
+      //-         a(href='https://github.com/CNessler/CO-hike-board/blob/master/README.md')
+      //-           i.fa.fa-github.fa-4x
         .item.active
-          img(src='/images/CO-hike-board.png', alt='Colorado Hike Board')
-          .carousel-caption
-            .app-title
-              a(href='http://development.colorado-hike-board.divshot.io/')
-                h3 CO Hike Board 
-              .skills-used
-                p | Mongo | Express | Angular | Node | Javascript | CSS |
-            .git
-              a(href='https://github.com/CNessler/CO-hike-board/blob/master/README.md')
-                i.fa.fa-github.fa-4x
-        .item
           img(src='/images/eat-local.png', alt='Farmers Market App')
           .carousel-caption
             .app-title
@@ -70,7 +70,7 @@ block content
       a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left
       a.right.carousel-control(href='#carousel', role='button', data-slide='next')
-        span.glyphicon.glyphicon-chevron-right
+        span.glyphicon.glyphicon-chevron-right 
     .container
       h1.title Skills
       #skills
