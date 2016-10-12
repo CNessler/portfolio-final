@@ -3,117 +3,92 @@ extends layout
 block content
   link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
   link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
-  .row.navbar
-      .col-md-4.pad
-        .circle
-          a#top(href='#skills') Skills
-      .col-md-4
-        h4 Claire Nessler
-        span Eductor turned Full Stack Developer
-      .col-md-4.pad
-        .circle
-          a#contactTop(href='#contact') Contact
-    #carousel.carousel.slide(data-ride='carousel', data-interval='5000', data-pause='hover')
-      // Indicators
-      ol.carousel-indicators
-        li.active(data-target='#carousel', data-slide-to='0')
-        li(data-target='#carousel', data-slide-to='1')
-        li(data-target='#carousel', data-slide-to='2')
-        //- li(data-target='#carousel', data-slide-to='3')
-      // Wrapper for slides
-      .carousel-inner
-        //- .item.active
-        //-   img(src='/images/CO-hike-board.png', alt='Colorado Hike Board')
-        //-   .carousel-caption
-        //-     .app-title
-        //-       a(href='http://development.colorado-hike-board.divshot.io/')
-        //-         h3 CO Hike Board 
-        //-       .skills-used
-        //-         p | Mongo | Express | Angular | Node | Javascript | CSS |
-        //-     .git
-        //-       a(href='https://github.com/CNessler/CO-hike-board/blob/master/README.md')
-        //-         i.fa.fa-github.fa-4x
-        .item.active
-          img(src='/images/eat-local.png', alt='Farmers Market App')
-          .carousel-caption
-            .app-title
-              a(href='https://farmers-markets-finder.herokuapp.com/')
-                h3 Buy Local, Eat Local 
-              .skills-used
-                p | Express | API integration | Javascript | CSS3 |
-            .git
-              a(href='https://github.com/CNessler/fruits-veggies')
-                i.fa.fa-github.fa-4x
-        .item
-          img(src='/images/board.png', alt='Monopolize')
-          .carousel-caption
-            .app-title
-              a(href='https://monopolize-monopoloy.herokuapp.com/')
-                h3 Monopolize 
-              .skills-used
-                p | Mongo | Express | Node | Javascript | SASS | AJAX |
-            .git
-              a(href='https://github.com/CNessler/monopoly-group-project/tree/new-features')
-                i.fa.fa-github.fa-4x
-        .item
-          img.fit(src='/images/coffee.JPG', alt='This Portfolio')
-          .carousel-caption
-            .app-title
-              a(href='https://claire-nesslers-portfolio.herokuapp.com/')
-                h3 Portfolio 
-              .skills-used
-                p | HTML | Javascript | API integration |
-            .git
-              a(href='https://github.com/CNessler/portfolio-final/tree/move-around')
-                i.fa.fa-github.fa-4x
-      // Controls
-      a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
-        span.glyphicon.glyphicon-chevron-left
-      a.right.carousel-control(href='#carousel', role='button', data-slide='next')
-        span.glyphicon.glyphicon-chevron-right
+  
+  .row
+    div.background
+      .container
+        .header
+          .name I am an educator turned software engineer who builds and improves products by solving difficult problems with elegant solutions.
+  .container#extra
+    .row  
+      .col-md-7
+        .projects
+        #carousel.carousel.slide(data-ride='carousel', data-interval='5000', data-pause='hover')
+          // Indicators
+          ol.carousel-indicators
+            li.active(data-target='#carousel', data-slide-to='0')
+            li(data-target='#carousel', data-slide-to='1')
+            li(data-target='#carousel', data-slide-to='2')
+            //- li(data-target='#carousel', data-slide-to='3')
+          // Wrapper for slides
+          .carousel-inner
+            //- .item.active
+            //-   img(src='/images/CO-hike-board.png', alt='Colorado Hike Board')
+            //-   .carousel-caption
+            //-     .app-title
+            //-       a(href='http://development.colorado-hike-board.divshot.io/')
+            //-         h3 CO Hike Board 
+            //-       .skills-used
+            //-         p | Mongo | Express | Angular | Node | Javascript | CSS |
+            //-     .git
+            //-       a(href='https://github.com/CNessler/CO-hike-board/blob/master/README.md')
+            //-         i.fa.fa-github.fa-4x
+            .item.active
+              img(src='/images/eat-local.png', alt='Farmers Market App')
+              .carousel-caption
+                .app-title
+                  a(href='https://farmers-markets-finder.herokuapp.com/')
+                    h3 Buy Local, Eat Local 
+                  .skills-used
+                    p | Express | API integration | Javascript | CSS3 |
+                .git
+                  a(href='https://github.com/CNessler/fruits-veggies')
+                    i.fa.fa-github.fa-3x
+            .item
+              img(src='/images/board.png', alt='Monopolize')
+              .carousel-caption
+                .app-title
+                  a(href='https://monopolize-monopoloy.herokuapp.com/')
+                    h3 Monopolize 
+                  .skills-used
+                    p | Mongo | Express | Node | Javascript | SASS | AJAX |
+                .git
+                  a(href='https://github.com/CNessler/monopoly-group-project/tree/new-features')
+                    i.fa.fa-github.fa-3x
+            .item
+              img.fit(src='/images/coffee.JPG', alt='This Portfolio')
+              .carousel-caption
+                .app-title
+                  a(href='https://claire-nesslers-portfolio.herokuapp.com/')
+                    h3 Portfolio 
+                  .skills-used
+                    p | HTML | Javascript | API integration |
+                .git
+                  a(href='https://github.com/CNessler/portfolio-final/tree/move-around')
+                    i.fa.fa-github.fa-3x
+          // Controls
+          a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left
+          a.right.carousel-control(href='#carousel', role='button', data-slide='next')
+            span.glyphicon.glyphicon-chevron-right
+      .col-md-4      
+        div.school
+          p Galvanize 
+          p Boot Camp 
+          p Projects
+  .row#moreaboutme   
     .container
-      h1.title Skills
-      #skills
-        table
-          tr
-            td
-              .image
-                img(src='/images/api.png', alt='')
-            td
-              .image
-                img(src='/images/css3-logo.png', alt='')
-            td
-              .image
-                img(src='/images/Expressjs.png', alt='')
-            td
-              .image
-                img(src='/images/javascript.png', alt='')
-          tr
-            td
-              .image
-                img(src='/images/mongoose.png', alt='')
-            td
-              .image
-                img(src='/images/node.png', alt='')
-            td
-              .image
-                img(src='/images/oopinjs.png', alt='')
-            td
-              .image
-                img(src='/images/sass.png', alt='')
-          tr
-            td
-              .image
-                img(src='/images/mongodb.jpeg', alt='')
-            td
-              .image
-                img(src='/images/angularjs.png', alt='')
-            td
-              .image
-                img(src='/images/js.png', alt='')
-            td
-              .image
-                img(src='/images/ajax.jpeg', alt='')
+        .col-md-6
+          div.info 
+            p Oh hey!  
+            | I'm Claire. I love to bike, hike, and travel. 
+            | And after either one I enjoy a nice cold brew. 
+            | I'm always happy to meet for a conversation so feel free to contact me.
+        .col-md-6
+          div.aboutme
+            img.aboutme(src="/images/me.JPG", alt="About Me")
+  .row
+    .container
       .form
         h1#contact.title Contact
         form(action="/contact" method='post')

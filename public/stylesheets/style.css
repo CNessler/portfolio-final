@@ -3,50 +3,53 @@ html, .ng-view{
 }
 
 html body {
-  padding: 50px;
   padding: 0;
-  background-color: #131B23;
+  margin: 0;
+  background-color: #e6ffe6;
 }
-.navbar {
-  padding: 25px;
+.background {
+  background-image: url('/images/antique.JPG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:800px;
+  width:100%;
+}
+.background .header {
   text-align: center;
-  vertical-align: middle;
-  color: #C5DAEA;
-  position: absolute;
-  background: linear-gradient(#C5DAEA, #131B23);
+  vertical-align: center;
+  padding-top: 30%;
+  color: white;
+  font-family:"Courier New";
 }
-
-.navbar h4 {
-  text-shadow: 2px 2px 4px #000000;
-  font-family: 'Pacifico', cursive;
+.header .name {
+  font-size: 40px;
+}
+.header .title {
   font-size: 30px;
+  color: white;
 }
-.navbar span {
-  /*font-family: 'Pacifico', cursive;*/
-  font-family: 'Oxygen', sans-serif;
-  font-size: 20px;
-}
-.navbar a {
-  text-decoration: none;
+.school {
+  padding-top: 20%;
+  font-size: 40px;
+  font-family: "Courier New";
   text-align: center;
-  padding-top: 5px;
-  color: #131B23;
-  font-size: 18px;
-  font-family: 'Oxygen', sans-serif;
-
 }
-.navbar .circle {
-  width: 4.9em;
-  height: 4.9em;
-  line-height: 4.9em;
-  border-radius: 50%;
-  background-color: #C5DAEA;
-  margin: 0 auto;
-  /*float: right;*/
+#moreaboutme {
+  padding-top: 10%;
 }
-
-.navbar .pad {
-  padding-top: 8px
+.info {
+  padding-top: 20%;
+  font-size: 25px;
+  font-family: "Courier New";
+  text-align: center;
+}
+.aboutme {
+  height:100%;
+  width:100%;
 }
 #carousel .carousel-indicators .active{background-color: #C5DAEA}
 #carousel .carousel-inner .item .carousel-caption .app-title a {text-decoration: none;}
@@ -62,46 +65,50 @@ body .navbar{
   margin: 0;
 }
 #carousel {
-  height: 600px;
-  /*padding-top: 50px;*/
+  height: 350px;
+  margin: 15px;
 }
 
 #right {float: right}
 #left {float: left}
+#carousel .carousel-inner .item .app-title {
+  padding-top: 10%;
+}
 
 #carousel .carousel-inner .item .app-title h3{
   color: #C5DAEA;
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   font-family: 'Oxygen', sans-serif;;
 }
 #carousel .carousel-inner .item img {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 600px;
+  height: 350px;
 }
 
 #carousel .carousel-inner .item .fit {
-  height: 600px;
+  height: 350px;
   width: 80%;
 }
 #carousel .carousel-inner .item .app-title {
-  border-top: 4px solid #C5DAEA;
-  border-bottom: 4px solid #C5DAEA;
+  border-top: 2px solid #C5DAEA;
+  border-bottom: 2px solid #C5DAEA;
   text-align: center;
   padding: 0px 0px 4px 0px;
-  margin-bottom: 150px;
+  margin-bottom: 0px;
   bottom: 6em;
 }
 .git {
-  margin-bottom: 30px;
+  padding-top: 8%;
+  padding-bottom: 1%;
 }
 #carousel .carousel-inner .item .git a {
   color: #C5DAEA;
 }
 #carousel .carousel-inner .item .skills-used {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 img {-webkit-filter: brightness(55%);}
@@ -127,18 +134,8 @@ table {
 }
 .title {
   padding-top: 40px;
-  color:#2274A5;
-  font-family: 'Oxygen', sans-serif;;
-}
-.about {
-  padding-top: 20px;
-  color:#2274A5;
-  font-family: 'Oxygen', sans-serif;;
-
-}
-.container #skills {
-  padding-bottom: 60px;
-  padding-top: 20px;
+  color:black;
+  font-family: "Courier New";
 }
 form {
   width: 60%;
@@ -147,10 +144,10 @@ form {
 .form {
   padding-top: 80px;
   padding-bottom: 200px;
-  font-family: 'Oxygen', sans-serif;;
+  font-family: "Courier New";
 }
 .button:hover {
-  background-color: #2274A5;
+  background-color: #53c68c;
 }
 .view-container > .view.ng-animate {
   position:absolute;
